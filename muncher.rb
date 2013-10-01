@@ -9,29 +9,29 @@ output['sounds'] = []
 
 
 class Sound
-	def initialize(name, exts)
-		exts.each do | ext |
-			if ext.downcase == 'mp3'
-				@mp3 = name + '.' + ext
-			elsif ext.downcase == 'ogg'
-				@ogg = name + '.' + ext
-			elsif ext.downcase == 'wav'
-				@wav = name + '.' + ext
-			end
-		end
-	end
-	def to_json()
+    def initialize(name, exts)
+        exts.each do | ext |
+            if ext.downcase == 'mp3'
+                @mp3 = name + '.' + ext
+            elsif ext.downcase == 'ogg'
+                @ogg = name + '.' + ext
+            elsif ext.downcase == 'wav'
+                @wav = name + '.' + ext
+            end
+        end
+    end
+    def to_json()
         object = {'mp3' => @mp3, 'ogg' => @ogg, 'wav' => @wav}.to_json
         object = JSON.parse(object)
-	end
+    end
 end
 
 
 Dir.foreach(source) do |filename|
     if filename != '.' and filename != '..' and (filename.downcase.match(/(mp3|wav|ogg)/))
-		name = File.basename(filename, '.*')
-		ext = File.extname(filename).gsub('.','')
-    	filenames[name] << ext
+        name = File.basename(filename, '.*')
+        ext = File.extname(filename).gsub('.','')
+        filenames[name] << ext
     end
 end
 
