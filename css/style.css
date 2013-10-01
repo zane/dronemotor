@@ -1,0 +1,58 @@
+html, body {
+    height: 100%;
+}
+body {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+    background: url('../images/background.png') no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #e2e2e2;
+}
+h1 {
+    font-weight: 100;
+    font-size: 150px;
+    line-height: auto;
+    margin: -70px auto 30px;
+    color: #bbb;
+    opacity: .5;
+}
+a {
+    color: #bbb;
+    text-decoration: none;
+}
+#wall {
+    margin: 0 auto 60px;
+    padding: 0;
+    overflow: auto;
+}
+.buddha-machine {
+    list-style-type: none;
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin: 7px;
+    background-color: #eee;
+    opacity: .85;
+}
+.buddha-machine:hover {
+    cursor: pointer;
+}
+.buddha-machine.inactive {
+    opacity: .3;
+}
+.buddha-machine.inactive:hover {
+    cursor: default;
+}
+.buddha-machine.on {
+    -webkit-animation: pulse 40s infinite alternate;
+}
+@-webkit-keyframes pulse {
+    0% {background-color: #45CEEF;}
+    25% {background-color: #FFF5A5;}
+    50% {background-color: #FFD4DA;}
+    75% {background-color: #99D2E4;}
+    100% {background-color: #D8CAB4;}
+}
+audio {
+    display: none;
+}
