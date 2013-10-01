@@ -12,7 +12,7 @@
         <script type="text/template" id="buddha-machine-template">
         <% if (mp3||ogg||wav) { %>
             <li class="buddha-machine">
-                <audio controls preload loop>
+                <audio preload loop>
                     <% if (mp3) { %><source src="sounds/<%= mp3 %>" type="audio/mpeg"><% } %>
                     <% if (ogg) { %><source src="sounds/<%= ogg %>" type="audio/ogg"><% } %>
                     <% if (wav) { %><source src="sounds/<%= wav %>" type="audio/wav"><% } %>
