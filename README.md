@@ -12,5 +12,5 @@ the audio loops are from [buddha machines](http://en.wikipedia.org/wiki/FM3) ver
 
 ### usage
 
-+ drop audio files into **/sounds** (must be html5 <audio> element compatible: mp3, ogg, or wav)
++ drop audio files into **/sounds** (must be html5 audio element compatible: mp3, ogg, or wav)
 + `$ ruby muncher.rb` generates **sounds.json** (requires: ruby 1.9.3+ and the ruby gems [fileutils](http://rubygems.org/gems/fileutils) and [json](http://rubygems.org/gems/json))
