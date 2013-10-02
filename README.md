@@ -8,7 +8,7 @@ the audio loops are from [buddha machines](http://en.wikipedia.org/wiki/FM3) ver
 
 ### this is a buddha machine
 
-![buddha machine)](http://www.codingcolor.com/wp-content/uploads/2009/09/buddhamachine-b.gif)
+![buddha machine](http://www.codingcolor.com/wp-content/uploads/2009/09/buddhamachine-b.gif)
 
 ### usage
 
